@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: nginx-service-example
-  namespace: practice-session
+  namespace: practice-session-<your_name_here>
 spec:
   selector:
     app: nginx-lab #Pod binding, see in dep.yaml spec->selector->matchlabels->app has the same value. Connecting the service with the pods/deployment is done by this value.
